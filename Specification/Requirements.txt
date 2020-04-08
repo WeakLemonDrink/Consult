@@ -1,0 +1,173 @@
+Requirements for consultation software
+
+
+Content Management System
+Users / admin - roles:
+Admin (highest) - can add new users, approve changes to pages, publish pages, export docs, etc. 
+Editor - can create content (i.e. write the plan), maybe publish, manage consultees database, etc.
+Consultee - an external person who registers with the site in order to log in and make comments
+Visitor - no personal data collected / no log in, visits the site to read the plan.
+
+Users should have some basic authentication, e.g. clicking a link in an email to verify their email address
+Editors should be able to write “a plan” using the CMS
+Include a process where Admin / Editors able to approve comments for publication. Cannot be a ‘free for all’ with consultees self-publishing.
+A plan should be able to contain images, tables, charts - and paragraph numbers, etc.
+Generate a contents page and list of policies.
+Importantly, editors must be able to insert a ‘policy box’ (or several boxes) into each section
+
+
+
+Consultees Database
+GDPR compliance!
+A database of personal contact details which exists beyond the life cycle of the plan. 
+Must distinguish between different types of consultees, for example:
+Individuals e.g. a member of the public 
+An individual responding on behalf of an organisation e.g. a parish clerk on behalf of a parish council
+An agent, employed by a company, responding on behalf of their client e.g. a landowner (who also may or may not belong to an organisation)
+
+
+
+
+
+Data exports / backups
+Data should be backed up regularly to make sure we don’t lose anything if something goes wrong 
+Should be able to export all the data at different times in the plan lifecycle
+Should be able to export reports written in the cms to pdf
+Should be able to export comments data to csv
+Should be able to export ‘comment reports’ to pdf.
+Should be able to export consultee and agent contact details to csv
+
+Front-end
+Viewing and commenting
+Plan must always be visible (no login required)
+Must log in to comment, and must only be able to comment between set dates.
+Ability to change ‘theme’ of front end to help system to fit in with corporate branding.
+
+Plan lifecycle
+Regulations require Local Plans to be subject to various stages of consultation during their lifecycle. In summary the process for preparing a LP includes:
+	
+	‘Informal’ consultation stages - one or more consultations 
+After deciding to prepare a new Local Plan, most LPA’s undertake one or more ‘informal’ stages of consultation. ‘Informal’ in the sense that the requirements are not firmly set out in legislation, and that they are not consulting on a ‘plan proposal’, but exploring various planning issues or policy options.
+
+Some LPA’s may call this an ‘Issues & Options’ consultation, which is a sort of detailed questionnaire. This normally wouldn’t suggest any policies, but would simply explore local planning issues and possible options for what the policies should say. It is possible that some customers may wish to deviate from the standard “support|neutral|object + comment box” method of responding, and may require a more flexible ‘Survey Monkey’ style questionnaire.
+
+Other LPA’s may consult on a ‘Preliminary Draft Local Plan’. This is more akin to an ‘early draft’ LP in its style, with draft policies, but potentially still including options. 
+
+Formal consultation on ‘Draft Local Plan’
+It is a statutory requirement to consult on a draft Local Plan for a period of six weeks.
+
+The draft plan is the LPA’s proposal for what the final product should look like. However, it will inevitably change following further stages of plan preparation.
+
+Publication of plan - the ‘Submission Plan’
+Following consultation on the draft plan, the LPA will review the responses it has received and amend the plan accordingly. The LPA is unlikely to introduce substantially new material to the plan, as doing so would potentially require a repeat of the consultation on the draft plan stage. 
+
+The amended plan must be published for a further six-week consultation. However, this time the LPA does not amend the plan. 
+
+Following the consultation, the plan, evidence documents, and all consultation responses received at the ‘publication’ stage are submitted to the government. The SoS then appoints a Planning Inspector to examine the plan.
+
+Post examination consultation
+Following examination, there will normally be a consultation on ‘main’ and ‘minor’ modifications to the plan. In other words big and small changes to policy, as recommended by the Planning Inspector.
+
+Other documents
+Council’s often produce ‘Supplementary Planning Documents’ which ‘hang off’ of policies in the Local Plan. SPDs provide further guidance on a particular planning matter. SPD’s also require consultation. Almost all Local Plans are accompanied by one or more SPD’s (sometimes lots).
+
+In addition, Council’s produce hosts of other documents and strategies which require consultation.
+
+The above illustrates that each LPA will need to use our system multiple times in preparing a Local Plan, and will likely need to use it for other accompanying documents also. Our system will therefore need some sort of ‘homepage’ listing all documents for the LPA/Council. 
+
+In addition, national policy requires a Local Plan to be reviewed every five years. So LPA’s spend 2-5 years writing a Local Plan, and must start the process again 5 years later. 
+
+The process of preparing Neighbourhood Plans, is slightly simpler, but similarly robust regarding consultation, meaning Parish & Town Councils and Neighbourhood Forums are also potential customers. 
+
+This continuing process of consultation highlights the importance of the consultees database. A high quality, user friendly database system providing consultees and agents contact details.
+
+
+Commenting
+Comments need to be time limited - only allow comments to be made between set dates/times.
+Need to be able to turn on/ turn off comments
+Need to be able to attach a file to a comment
+Needs to have approve/no opinion/reject options
+Needs to record a timestamp of when the comment was written
+
+Selling the product
+Licensed to customers paying an annual fee.
+Additional costs for set up and training
+Set number of admins and editor licenses?
+
+
+
+Appendix 1
+
+Overview of structure / relationships
+
+LPA ‘Portal’ (One)
+	|___  Plan (Many)
+		|___  Chapter (Many)
+			|___ Section (Many) 
+				|___Supporting Text (Many) 
+|___ Policy (Many)   
+
+
+
+For example - a typical system could look like...
+
+
+Council’ X’s ‘Portal’
+|___  Preliminary Draft Plan 
+		|___  Introduction
+			|___ Summary of process
+				|___Supporting Text 
+			|___ Characteristics of area
+				|___Supporting Text 
+
+|___  Spatial Strategy
+			|___ Amount of development
+				|___Supporting Text
+|___ Policy 
+|___ Where development should be located
+				|___Supporting Text
+|___ Policy 	
+|___  Housing
+			|___ Types of housing
+				|___Supporting Text
+|___ Policy 
+|___Supporting Text
+|___ Policy 		
+|___ Affordable housing
+				|___Supporting Text
+|___ Policy 	
+|___Supporting Text
+|___ Policy 		
+
+… and so on	
+
+
+
+
+
+
+
+
+
+
+
+
+Front end page view example
+
+
+All supporting text in section
+All policies section
+Comment section, with data such as - persons name, date comment made, consultation point, comment
+Basic sorting and filtering functionality. E.g. sort by name, filter by consultation point - policy or supporting text.
+
+
+Glossary
+
+Agent = A person who responds to a consultation on behalf of a consultee. For example, a planning consultant representing their client, such as a landowner or housebuilder.
+Consultation = Publishing a plan specifically for the purpose of inviting people to respond in writing with their views.
+Consultee = A person who responds to / is invited to respond to a consultation
+LP = Local Plan
+LPA = Local Planning Authority
+Planning issues = matters which have implications for land use planning, for example new development, protection of valued open spaces and habitats, infrastructure provision, etc.
+Policy = A set of rules which are applied when determining a planning application. Normally setting requirements on landowners, developers, and service providers. For example, requiring a development of market housing to provide a set percentage of ‘affordable homes’ on site.
+
